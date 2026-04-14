@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="en>
+  <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Services - UHD Cafe </title>
+
+  <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .uhd-red {
+      background-color: #c8102e;
+      color:white;
+    }
+    .uhd-blue {
+      background-color: #0033a0;
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -5,7 +27,11 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">MySite</a>
+    <a class="navbar-brand" href="#">UHD Cafe</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar=toggler-icon"></span>
+    </button>
 
     <div>
       <ul class="navbar-nav">
@@ -17,4 +43,56 @@
     </div>
   </div>
 </nav>
+<header class="uhd-red text-center p-5">
+  <h1>Our Services</h1>
+  <p>Enjoy artisanal coffee and a cozy environment</p>
+  </header>
 
+  <main class="container my-5">
+
+    <selection class="row text-center">
+      <article class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Premium Coffee</h3>
+            <p class="card-text">
+              Coffee brewed from only the highest quality beans
+            </p>
+            <button class="btn btn-primary" onclick="showMessage('Artisanal Coffee')">
+              Learn More 
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="col=md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Pastries</h3>
+            <p`class="card-text">
+              Sit and enjoy of our house made pastries, fresh daily.
+            </p>
+            <button class="btn btn-primary" onclick="showMessage('Fresh Pastries')">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </article>
+    </selection>
+  </main>
+
+  <footer class="uhd-blue text-center p-3">
+    <p>&copy; 2026 UHD Cafe</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstap.bundle.min.js"></script>
+
+  <script>
+    function showMessage(service) {
+      alert("You selected: " + service);
+    }
+  </script>
+</body>
+</html>
+              
+              
+            
