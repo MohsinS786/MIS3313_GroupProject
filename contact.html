@@ -32,24 +32,51 @@
 <label class="mt-3">Pickup Date</label>
 <input type="date" class="form-control mb-2">
 
+<label class="mt-3">Select Your Drink</label>
 <select class="form-control mb-2">
-  <option>Select Service</option>
-  <option>Consulting</option>
-  <option>Marketing</option>
-</select>
-
-<div class="mb-2">
-  <input type="radio" name="plan"> Basic
-  <input type="radio" name="plan"> Premium
+  <option>Choose a drink</option>
+  <option>Latte</option>
+  <option>Cappuccino</option>
+  <option>Espresso</option>
+  <option>Mocha</option>
+  <option>Americano</option>
+</select> 
+    
+<div class="mb-3">
+  <label>Select Size</label><br>
+  <input type="radio" name="size" value="Small"> Small<br>
+  <input type="radio" name="size" value="Medium"> Medium<br>
+  <input type="radio" name="size" value="Large"> Large<br>
+</div> 
+    
+<div class="mb-3">
+  <label>Temperature</label><br>
+  <input type="radio" name="temperature" value="Hot"> Hot<br>
+  <input type="radio" name="temperature" value="Iced"> Iced<br>
 </div>
 
-<div class="mb-2">
-  <input type="checkbox"> Email Updates
-  <input type="checkbox"> SMS Alerts
+<div class="mb-3">
+  <label>Add-ons</label><br>
+  <input type="checkbox" value="Extra Shot"> Extra Shot<br>
+  <input type="checkbox" value="Whipped Cream"> Whipped Cream<br>
+  <input type="checkbox" value="Caramel"> Caramel Drizzle<br>
+</div>
+    
+<div class="mb-3">
+  <label>Quantity</label>
+  <input type="number" class="form-control" min="1" max="10">
+</div>
+    
+<div class="mb-3">
+  <label>Pickup Time</label>
+  <input type="time" class="form-control">
+</div> 
+    
+<div class="mb-3">
+  <label>Special Instructions</label>
+  <textarea class="form-control" placeholder="e.g. no sugar, extra hot"></textarea>
 </div>
 
-<textarea class="form-control mb-2" placeholder="Message"></textarea>
-
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" class="btn btn-danger w-100">Place Order</button>
 
 </form>
