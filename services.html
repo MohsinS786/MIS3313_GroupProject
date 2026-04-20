@@ -8,43 +8,59 @@
   <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-.top-bar {
-  background-color: #0033a0;
-  color: white;
-  padding: 10px 0;
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
 }
-    .footer-bar {
-      background-color: #0033a0;
-      color: white;
-      padding: 10px;
+    >top-bar {
+      background-color:#0000ff;
+      color:white;
+      padding: 12px 0;
+    }
+    .nav-link-custom {
+      color:white;
+      margin-left: 20px;
+      text-decoration:none;
+    }
+    .nav-link-custom:hover {
+      text-decoration: underline;
+    }
+    .page-title {
       text-align: center;
       margin-top: 40px;
     }
-    .section-title {
-      margin-top: 40px;
-      margin-bottom: 10px;
+    .page-substitute {
+      text-align:center;
+      color:gray;
+      margin-bottom: 50px;
     }
-    .section-subtitle {
-      color: gray;
-      margin-bottom: 40px;
+    .services-box {
+      padding: 20px;
+    }
+    .footer-bar {
+      background-color: #0000ff;
+      color: white;
+      text-align:center;
+      padding:12px;
+      margin-top: 50px;
     }
     </style>
 </head>
-
   <body>
+
     <div class="top-bar">
-      <div class="container d-flex justify-content-between">
+      <div class="container d-flex justify-content-between align-items-center">
         <span>Fresh Brew Coffee</span>
         <div>
-          <a href="index.html" class="text-white me-3">Home</a>
-          <a href="about.html" class="text-white me-3">About</a>
-          <a href="services.html" class="text-white me-3">Services</a>
-          <a href="contact.html" class="text-white">Contact</a>
+          <a href="index.html" class="nav-link-custom">Home</a>
+          <a href="about.html" class="nav-link-custom">About</a>
+          <a href="services.html" class="nav-link-custom">Services</a>
+          <a href="contact.html" class="nav-link-custom">Contact</a>
         </div>
       </div>
     </div>
 
-    <main class="conatiner text-center">
+    <main>
 
       <h1 class="section-title">Our Services</h1>
       <p class="section-subtitle">Enjoy artisanal coffee and a cozy envirnoment</p>
