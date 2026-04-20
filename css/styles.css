@@ -47,6 +47,12 @@ body {
     border-radius: 10px;
 }
 
+.coffee-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 /* Footer */
 footer {
     background-color: #0d3b66;
